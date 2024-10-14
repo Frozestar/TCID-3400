@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Times Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Christmas Times Gallery</h1>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul>
+                <Li><a href="index.html">Home</a></Li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main class="photo-gallery">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="images/MejiaE-CupTemplate.png" alt="Holiday Cup Template"></div> 
+                <div class="slide"><img src="images/MejiaE-CupPicture-3.jpeg" alt="Holiday Cup Picture 1"></div>
+                <div class="slide"><img src="images/MejiaE-CupPicture-2.jpeg" alt="Holiday Cup Picture 2"></div>
+                <div class="slide"><img src="images/MejiaE-CupPicture-1.jpeg" alt="Holiday Cup Picture 3"></div>
+            </div>
+            <button class="prev" onclick="prevSlide()">Previous</button>
+            <button class="next" onclick="nextSlide()">Next</button>
+        </div>
+    </main>
+   
+
+    <footer>
+        <p>Contact us at contact@xmastimes.com</p>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        })
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html>

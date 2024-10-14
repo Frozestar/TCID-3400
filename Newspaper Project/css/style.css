@@ -1,0 +1,199 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center Navigation Areas */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Adjust gap between items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3:1 ratio between content and advertisements*/
+    gap: 20px;
+    padding: 20px;
+}
+
+body {
+    background-color: #7a0e0e;
+    color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    background-color: rgb(66, 0, 0);
+    border: 1px solid #ccc;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px;
+    padding: 20px;
+    background-color: #630707;
+    border-radius: 10px;
+}
+
+.article-group {
+    background-color: #420000;
+    border: solid 10px #420000;
+    border-radius: 5px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #7a0e0e;
+}
+
+.advertisement {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #549E73;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #630707;
+    border-radius: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Hamburger Menu Style */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show Hamburger Menu */
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* Intially hide navigation items */
+    }
+
+    nav ul.active {
+        display: flex; /* Display Navigation items in a column */
+    }
+}
+
+.card {
+    color: #7a0e0e;
+    border: 4px solid #549E73; /* Holly green border for "CHRISTMAS!" */
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Very light gray background for readbility */
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #420000;
+    border-radius: 5px;
+}
+
+.slider img {
+    width: 70%;
+    height: auto;
+    display: none;
+    position: relative;
+    left: 15%;
+}
+
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5;}
+    to {opacity: 1;}
+}
+
+.home {
+    background-color: #630707;
+    border-radius: 10px;
+}
+
+main img {
+    width: 70%;
+    height: auto;
+    border: 10px solid #420000;
+    border-radius: 5px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.featured-images {
+    text-align: center;
+}

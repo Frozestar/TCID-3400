@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>My First Webpage</title>
+    </head>
+    <body>
+        <div id="home">
+            <h1><a href="#home">My First Webpage</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <Li><a href="index.html">Welcome</a></Li>
+                <Li><a href="index.html">Icons</a></Li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#name">Name</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#images">Images</a></li>
+            </ul>
+            <ul>
+                <li><button id="themeButton">Change to Dark Theme</button></li>
+                <li><button id="themeButton2">Change to Red Theme</button></li>
+            </ul>
+        </nav> 
+        <!-- Your HTML content will go here -->
+        <div class="small" id="welcome">
+            <h2>Welcome</h2>
+            <p>This is the welcome paragraph on my first webpage. I have 
+                decided to include some icons I made for my music playlists.
+            </p>
+        </div>
+        <div class="big" id="icons">
+            <h2>Icons</h2>
+            <img src="MejiaE-MusiIcons_Drive By.png" 
+            alt="Driving Playlist Icon" class="playlist">
+            <img src="MejiaE-MusiIcons_Lyrical.png" 
+            alt="Lyrical Playlist Icon" class="playlist">
+            <img src="MejiaE-MusiIcons_Instrumental.png" 
+            alt="Instrumental Playlist Icon" class="playlist">
+            <img src="MejiaE-MusiIcons_Christian.png" 
+            alt="Christian Playlist Icon" class="playlist">
+        </div>
+        <script>document.getElementById('themeButton').addEventListener('click', function()
+        {document.body.classList.toggle('dark-theme');});</script>
+        <script>document.getElementById('themeButton2')
+            .addEventListener('click', function()
+            {document.body.classList.toggle('red-theme');});</script>
+    </body>
+</html>

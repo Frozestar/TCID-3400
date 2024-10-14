@@ -1,0 +1,219 @@
+.dark-theme {
+    background-color: #333;
+    color: #f9f9f9;
+    #name, #hobbies, #interests, #images, #profile, #welcome, #icons {
+        border: 2px solid rgb(80, 119, 190); /* Shade of cornflower blue border for "BRANDING!" */
+        background-color: #555; /* Dark background for ease of eyes */
+        box-shadow: 8px 8px 1px rgba(80, 119, 190, 0.399); /* Shade of cornflower blue */
+    }
+    h1 {
+        background-color: #555;
+        color: #f9f9f9;
+    }
+    h2 {
+        background-color: #5077be; /* Shade of cornflower blue */
+    }
+    button {
+        background-color: #555; /* Shade of cornflower blue */
+        color: #f9f9f9;
+    }
+    nav {
+        background-color: #5077be; /* Shade of cornflower blue */
+    }
+    
+    nav ul li a{
+        color: #f9f9f9;
+    }
+    
+    nav ul li a:hover {
+        color: #5077be; /* Change color when hovered over */
+        background-color: #f9f9f9;
+    }
+    div h1 a {
+        color: #f9f9f9;
+    }
+}
+
+.red-theme {
+    background-color: #7a0e0e;
+    color: #f9f9f9;
+    #name, #hobbies, #interests, #images, #profile, #welcome, #icons {
+        border: 2px solid #a31010; /* Shade of cornflower blue border for "BRANDING!" */
+        background-color: #420000; /* Dark background for ease of eyes */
+        box-shadow: 8px 8px 1px #a3101066; /* Shade of cornflower blue */
+    }
+    h1 {
+        background-color: #420000;
+        color: #f9f9f9;
+    }
+    h2 {
+        background-color: #a31010; /* Shade of cornflower blue */
+    }
+    button {
+        background-color: #420000; /* Shade of cornflower blue */
+        color: #f9f9f9;
+    }
+    nav {
+        background-color: #a31010; /* Shade of cornflower blue */
+    }
+    
+    nav ul li a{
+        color: #f9f9f9;
+    }
+    
+    nav ul li a:hover {
+        color: #a31010; /* Change color when hovered over */
+        background-color: #f9f9f9;
+    }
+    div h1 a {
+        color: #f9f9f9;
+    }
+    .playlist {
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        margin: 0 auto;
+    }
+    .art {
+        width: 500px;
+        height: auto;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    .verticle {
+        width: 250px;
+        height: auto;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+}
+
+div h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Aligns menu items horizontally */
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: cornflowerblue; /* Change color when hovered over */
+    background-color: #f9f9f9;
+}
+
+body {
+    background-color: lightgrey; 
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    background-color: #f9f9f9;
+    color: cornflowerblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    background-color: cornflowerblue; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+ul,p {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+#name, #hobbies, #interests, #images, #profile, #welcome, #icons {
+    border: 2px solid cornflowerblue; /* Cornflower blue border for "BRANDING!" */
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Very light gray background for readbility */
+    box-shadow: 8px 8px 1px rgba(100, 148, 237, 0.399);
+}
+
+img {
+    max-width: 50%;
+    max-height: auto
+}
+
+button {
+    background-color: #f9f9f9; /* Cornflower blue!! */
+}
+
+.small {
+    width: 26%;
+    height: 175px;
+    display: inline-table;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.big {
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.profile-card {
+    width: 300px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.profile-card .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-card h3 {
+    margin: 10px 0;
+}
+
+.profile-card p {
+    margin: 5px 0;
+}
+
+.playlist {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.art {
+    width: 500px;
+    height: auto;
+    border-radius: 1%;
+    margin: 0 auto;
+}
+.verticle {
+    width: 250px;
+    height: auto;
+    border-radius: 1%;
+    margin: 0 auto;
+}
